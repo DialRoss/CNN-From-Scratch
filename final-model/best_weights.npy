@@ -1,0 +1,6 @@
+# Pour sauvegarder
+np.save('best_weights.npy', model.get_weights())
+
+# Pour charger
+weights = np.load('best_weights.npy', allow_pickle=True)
+model.set_weights(weights)
